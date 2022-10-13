@@ -61,24 +61,9 @@ public class Main {
         }
 
         public static void init() {
-
-            LinkedHashMap<Character, Character> map = new LinkedHashMap<Character, Character>();
-            map.put('a', '£'); map.put('b','*'); map.put('c','%'); map.put('d','&'); map.put('e','>'); map.put('f','<');
-            map.put('g','!'); map.put('h',')'); map.put('i','"'); map.put('j','('); map.put('k','@'); map.put('l','a');
-            map.put('m','b'); map.put('n','c'); map.put('o','d'); map.put('p','e'); map.put('q','f'); map.put('r','g');
-            map.put('s','h'); map.put('t','i'); map.put('u','j'); map.put('v','k'); map.put('w','l'); map.put('x','m');
-            map.put('y','n'); map.put('z','o');
             for (int i = 0; i < 26; i++) {
                 encryptionKeys.put(ALPHABETS[i], DECRYPTION_KEYS[i]);
             }
-
-            LinkedHashMap<Character, Character> map1 = new LinkedHashMap<Character, Character>();
-            map1.put('£', 'a'); map1.put('*','b'); map1.put('%','c'); map1.put('&','d'); map1.put('>','e'); map1.put('<','f');
-            map1.put('!','g'); map1.put(')','h'); map1.put('"','i'); map1.put('(','j'); map1.put('@','k'); map1.put('a','l');
-            map1.put('b','m'); map1.put('c','n'); map1.put('d','o'); map1.put('e','p'); map1.put('f','q'); map1.put('g','r');
-            map1.put('h','s'); map1.put('i','t'); map1.put('j','u'); map1.put('k','v'); map1.put('l','w'); map1.put('m','x');
-            map1.put('n','y'); map1.put('o','z');
-
 
             for (int i = 0; i < 26; i++) {
                 decryptionKeys.put(DECRYPTION_KEYS[i], ALPHABETS[i]);

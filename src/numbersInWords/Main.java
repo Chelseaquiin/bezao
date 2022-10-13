@@ -11,15 +11,21 @@ public class Main {
 
     public static void main(final String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
+        try {
 
-        System.out.println("Enter a number: ");
+            Scanner scanner = new Scanner(System.in);
 
-        int number = scanner.nextInt();
+            System.out.println("Enter a number: ");
 
-        System.out.println(convertToWords(number));
+            int number = scanner.nextInt();
 
+            System.out.println(convertToWords(number));
 
+        }
+
+        catch(InputMismatchException e){
+            System.out.println("Invalid input");
+        }
 
 
 
